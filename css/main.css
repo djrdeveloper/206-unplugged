@@ -84,9 +84,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Base styles
    ========================================================================== */
-
 header,
 footer 
 {
@@ -125,6 +124,10 @@ header nav
   flex-flow: row wrap;
   width: 60%;
 }
+.nav-links /*Used instead of UL*/
+{
+ width: 45%;
+}
 header .content-wrapper
 {
   display: flex;
@@ -137,7 +140,7 @@ header .content-wrapper
 
 .content-wrapper
 {
-  width: 48.5%;
+  width: 100%;
 }
 
 .hero-area 
@@ -146,10 +149,9 @@ header .content-wrapper
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 25px;
 }
-.hero-area h1{
-  padding: 20px 20px;
-}
+
 aside{
   display: flex;
   justify-content: center;
@@ -186,7 +188,7 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 45%;
+  width: 55%;
 }
 .reviews
 {
@@ -196,18 +198,10 @@ aside{
   flex-flow: row wrap;
   padding: 0 20px;
 }
-.reviews h2
-{
-  width: 48%;
-}
 
-.mission
-
+.reviews h3
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 50%;
 }
 
 .contact-section 
@@ -217,6 +211,55 @@ aside{
   align-items: center;
   flex-flow: row wrap;
 }
+
+
+
+footer  
+{
+ 
+}
+
+footer .content-wrapper
+{
+ width: 55%;
+ margin: 50px 0;
+}
+
+
+/*Unwanted Margins*/
+header .content-wrapper
+{
+  margin: 0;
+}
+.features p
+{
+  margin: 0;
+}
+footer p 
+{
+  margin: 0;
+}
+
+
+
+/*About PAGE*/
+
+.mission-content
+
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 25px;
+}
+
+.contact-section
+{
+  padding: 25px;
+}
+
+/*FAQ PAGE*/
 
 .faq
 
@@ -236,22 +279,9 @@ aside{
   flex-flow: row wrap;
 }
 
-footer .content-wrapper 
+.frequently-asked-questions
 {
-  width: 55%;
-}
-/*Unwanted Margins*/
-header .content-wrapper
-{
-  margin: 0;
-}
-.features p
-{
-  margin: 0;
-}
-footer p 
-{
-  margin: 0;
+  padding: 25px;
 }
 
 
