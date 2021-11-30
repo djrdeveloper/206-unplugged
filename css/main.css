@@ -86,6 +86,62 @@ textarea {
 /* ==========================================================================
    Base styles
    ========================================================================== */
+/*General styles*/
+
+html{
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.nav-links{
+
+}
+
+ul,ol{
+ list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+h3,h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+}
+
+p{
+
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-wrapper {
+
+}
+
 body 
 {
   Margin: 8px;
@@ -288,7 +344,6 @@ footer p
 /*FAQ PAGE*/
 
 .faq {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
