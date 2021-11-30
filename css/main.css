@@ -413,7 +413,6 @@ footer p
      {
       justify-content: space-between;
       flex-flow: row;
-      
      }
 
      .header-divider
@@ -442,10 +441,12 @@ footer p
       flex-flow: column wrap;
       flex-basis: 50%;
      }
-     .features .features-item-description {
+     .features .features-item-description
+    {
       width: 50%;
     }
-    .reviews article {
+    .reviews article 
+    {
       display: flex;
       justify-content: space-between;
     }
@@ -453,24 +454,32 @@ footer p
      {
       width:50%
      }
-     .footer-content {
+     .footer-content 
+     {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
   
-    footer .contact {
-      
+    footer .contact 
+    {
       margin-bottom: 0;
     }
   
-    footer .copyright {
+    footer .copyright 
+    {
       display: flex;
       width: 100%;
       justify-content: center;
       margin-top: 100px;
     }
   /*About Page*/
+
+  .mission .content-wrapper
+
+  {
+    margin-left: 10%;
+  }
   .mission-content 
   {
     display: flex;
@@ -507,24 +516,63 @@ Margin: 0px;
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-    .faq .content-wrapper {
+    .faq .content-wrapper 
+    {
         justify-content: space-between;
     }
     
     .faq-content 
     {
-        flex-basis: 40%;
-        
+        flex-basis: 40%;   
     }
  
     .faq h2 
     {
         width: 100%;
     }
-
-    @media only screen and (min-width: 1200px) {
+  }
+    @media only screen and (min-width: 1200px) 
+    {
     /*Desktop styles here*/
+    /*Homepage*/
+    .content-wrapper 
+    {
+      max-width: 1200px;
+      width: 100%;
+      
     }
+    aside .content-wrapper
+{
+  width : 80%;
+}
+.form
+{
+  flex-flow: column;
+  margin-left: 160px;
+  align-items: flex-start
+}
+    .features
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      padding: 0 20px;
+    }
+/*About Page*/
+  .mission .content-wrapper
+
+  {
+    margin-left: 10%;
+  }
+  .mission-content
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
