@@ -96,10 +96,39 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 2em;
+  color:#e2e3ed;
 }
-
+hr{
+  border-color: #3a3a3a;
+}
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 .nav-links{
-
+ font-weight: bold;
+ text-transform: uppercase;
 }
 
 ul,ol{
@@ -115,15 +144,17 @@ h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
   line-height: 2em;
+  font-weight: 500;
 }
 
 h3,h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
+  font-weight: 500;
 }
 
 p{
-
+ font-weight: 400;
 }
 
 img {
@@ -136,6 +167,7 @@ figure {
 
 address{
   font-family: 'Open Sans', sans-serif;
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -144,7 +176,7 @@ address{
 
 body 
 {
-  Margin: 8px;
+  Margin: 0px;
 }
 header,
 footer 
@@ -153,6 +185,7 @@ footer
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322 ;
 }
 header 
 {
@@ -196,7 +229,9 @@ header .content-wrapper
   width: 55%;
   margin: 50px;
 }
-
+main{
+  background-color:#527158 ;
+}
 .content-wrapper
 {
   width: 100%;
@@ -222,14 +257,14 @@ aside{
 .form
 {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.features
+.features 
 {
-  padding: 0 20px;
+  
+  padding: 20px;
 }
 
 .features .features-items
@@ -238,7 +273,8 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
- 
+  font-size: 0.75em;
+  text-align: center;
 }
 
 .features article
@@ -257,6 +293,7 @@ aside{
   align-items: center;
   flex-flow: row wrap;
   padding: 0 20px;
+  background-color: #2a423a;
 }
 
 .reviews h3
@@ -270,12 +307,14 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -340,7 +379,9 @@ footer p
 {
   padding: 25px;
 }
-
+.contact-section h2{
+  margin-bottom: -20px;
+}
 /*FAQ PAGE*/
 
 .faq {
@@ -350,7 +391,7 @@ footer p
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
+  Padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,12 +400,16 @@ footer p
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height:1em;
+  width:80%;
 }
 
 .faq-content {
-  margin-bottom: 50px;
+  padding: 0 10%;
 }
-
+.faq-content p{
+  font-size: 0.75em;
+}
 
 
 /* ==========================================================================
@@ -573,6 +618,7 @@ Margin: 0px;
    ========================================================================== */
     .faq .content-wrapper 
     {
+      margin-left:10%;
         justify-content: space-between;
     }
     
@@ -584,6 +630,7 @@ Margin: 0px;
     .faq h2 
     {
         width: 100%;
+        text-align: center;
     }
   }
     @media only screen and (min-width: 1200px) 
