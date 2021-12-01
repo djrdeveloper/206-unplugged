@@ -388,6 +388,7 @@ footer p
 
 .faq 
 {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
@@ -511,9 +512,9 @@ footer p
    @media only screen and (min-width: 768px) 
    {
     /*Tablet styles here*/
-    .content-wrapper {
-      max-width: 768px;
-      
+    .content-wrapper 
+    {
+      max-width: 768px; 
     }
      /*Hompage*/
      header
@@ -573,7 +574,8 @@ footer p
       width: 50%;
     }
 
-    .reviews .content-wrapper {
+    .reviews .content-wrapper 
+    {
       width: 80%;
     }
     .reviews article 
@@ -583,7 +585,7 @@ footer p
     }
     
      .footer-content 
-     {
+    {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -646,7 +648,7 @@ Margin: 0px;
     {
     font-size: 2.5em;
     }
-  
+   }
     @media only screen and (min-width: 1200px) 
     {
     /*Desktop styles here*/
@@ -658,12 +660,17 @@ Margin: 0px;
     }
     aside .content-wrapper
 {
-  width : 80%;
+  flex-basis: 50%;
+}
+aside .form-description 
+{
+  margin-right: 20%;
+  padding-right:0em;
 }
 .form
 {
+  width: 100%;
   flex-flow: column;
-  margin-left: 160px;
   align-items: flex-start
 }
     .features
@@ -674,6 +681,14 @@ Margin: 0px;
       flex-flow: row wrap;
       padding: 0 20px;
     }
+    .features h2
+    {
+      width: 80%;
+    }
+    .features .features-items 
+    {
+      flex-basis: 30%;
+    }
 /*About Page*/
   .mission .content-wrapper
   {
@@ -682,12 +697,22 @@ Margin: 0px;
   .mission-content
   {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
   }
-    }
-
+  .contact-section .content-wrapper
+  {
+    margin-left: 10%;
+  }
+  /*FAQ Page*/
+  .faq .content-wrapper 
+  {align-items: baseline;}
+  .faq h2 
+{
+  margin-bottom: 5%;
+}
+}   
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
