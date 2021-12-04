@@ -158,11 +158,11 @@ p{
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address{
@@ -177,6 +177,13 @@ address{
 body 
 {
   Margin: 0px;
+}
+header figure {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 header,
 footer 
@@ -218,7 +225,7 @@ header nav
 }
 .nav-links /*Used instead of UL*/
 {
- width: 45%;
+ width: 55%;
 }
 header .content-wrapper
 {
@@ -235,6 +242,7 @@ main{
 .content-wrapper
 {
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .hero-area 
@@ -243,7 +251,11 @@ main{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 25px;
+  padding: 0px 25px 200px 25px;
+  background: url("..//img/jake-melara-30679-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 aside{
@@ -263,7 +275,10 @@ aside{
 
 .features 
 {
-  
+  background: url("..//img/rawpixel-800820-unsplash1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 20px;
 }
 
@@ -522,7 +537,10 @@ footer p
       justify-content: space-between;
       flex-flow: row;
      }
-
+     header figure 
+     {
+      width: 50%;
+     }
      .header-divider
      {
        display: none;
@@ -532,6 +550,14 @@ footer p
       justify-content: space-evenly;
       padding-right: 60px;
      }
+     .hero-area 
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 25px 10% 200px 10%;
+    }
      aside h3
      {
       font-size: 1.5em;
@@ -542,7 +568,7 @@ footer p
       Display: Flex;
       justify-content: flex-start;
       flex-flow: row ;
-      padding: 50px;
+      padding: 25px;
      }
      aside .form-description 
      {
@@ -573,17 +599,30 @@ footer p
     {
       width: 50%;
     }
-
     .reviews .content-wrapper 
     {
+      display: flex;
+      flex-flow: row wrap;
       width: 80%;
     }
-    .reviews article 
-    {
-      display: flex;
-      justify-content: space-between;
+    .reviews figure {
+     flex-basis: 50%;
+     
     }
-    
+    .reviews article {
+     flex-basis: 45%;
+     font-size: 0.75em;
+     line-height: 2em;
+     margin-top: -1%;
+     padding-left: 5%;
+    }
+    .reviews h3
+    {
+      margin: 0;
+    }
+    .reviews p {
+      Margin: 0;
+    }
      .footer-content 
     {
       display: flex;
@@ -658,6 +697,25 @@ Margin: 0px;
       max-width: 1200px;
       width: 100%;
     }
+
+    .hero-area 
+    {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-flow: row wrap;
+    padding: 10%;
+    }
+
+    .hero-area h2 
+    {
+    margin-bottom: 40%;
+    font-size: 3em;
+    }
+
+    .features h2 {
+      align-content: center;
+    }
     aside .content-wrapper
 {
   flex-basis: 50%;
@@ -688,6 +746,37 @@ aside .form-description
     .features .features-items 
     {
       flex-basis: 30%;
+    }
+    
+    .reviews .content-wrapper 
+    {
+      display: flex;
+      flex-flow: row wrap;
+      width: 80%;
+    }
+    .reviews figure {
+     flex-basis: 50%;
+     
+    }
+    .reviews article {
+     font-size: 1em;
+     line-height: 2em;
+     margin-top: 0%;
+     padding-left: 5%;
+    }
+    .reviews h2
+    {
+      width: 100%;
+      font-size: 3em;
+    }
+    .reviews h3 
+    {
+     font-size: 2em;
+     margin:  auto;
+    }
+    .reviews p {
+      Margin-top: 5%;
+      font-size: 1em;
     }
 /*About Page*/
   .mission .content-wrapper
