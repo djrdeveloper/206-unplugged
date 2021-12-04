@@ -669,6 +669,9 @@ footer p
 {
     width: 45%
 }
+.map figure {
+  padding-bottom: 50%; 
+}
 
 .contact-section .content-wrapper h2 
 {
@@ -803,6 +806,9 @@ aside .form-description
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+  }
+  .map figure {
+    padding-bottom: 25%; 
   }
   .contact-section .content-wrapper
   {
