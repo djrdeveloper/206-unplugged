@@ -14,7 +14,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 /*
@@ -95,7 +95,7 @@ html{
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  line-height: 2em;
+  line-height: 1.5em;
   color:#e2e3ed;
 }
 hr{
@@ -300,9 +300,13 @@ aside{
   flex-flow: row wrap;
   width: 63%;
   margin: 30px 0px;
- 
 }
-
+/*Features Icons*/
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
+        text-align: center;
+}
 .reviews
 {
   display: flex;
@@ -365,6 +369,7 @@ footer .social-icons p {
 footer .copyright {
   margin: 20px 0;
 }
+
 
 
 /*Unwanted Margins*/
@@ -599,8 +604,14 @@ footer p
       display: flex;
       flex-flow: column;
       padding: 50px;
-      width: 80%;
+      width: 85%;
     }
+    /*Features Icons*/
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
+        text-align: center;
+}
      .features article
      {
       display: flex;
@@ -611,7 +622,8 @@ footer p
      }
      .features .features-item-description
     {
-      width: 50%;
+      width:auto;
+        padding: 10px;
     }
     .reviews .content-wrapper 
     {
@@ -763,8 +775,12 @@ aside .form-description
     .features .features-items 
     {
       flex-basis: 30%;
+      font-size: 1em;
     }
-    
+    .features article
+    {
+      flex-basis: 33%;
+    }
     .reviews .content-wrapper 
     {
       display: flex;
