@@ -170,9 +170,6 @@ address{
   font-style: normal;
 }
 
-.content-wrapper {
-
-}
 
 body 
 {
@@ -886,6 +883,16 @@ aside .form-description
   {
     margin-left: 10%;
   }
+  h2
+  {
+    font-size: 2.5em;
+  }
+  .contact-content h3
+  {
+    font-size: 2em;
+  }
+
+
   /*FAQ Page*/
   .faq .content-wrapper 
   {align-items: baseline;}
